@@ -1,0 +1,88 @@
+$colors: #ff7a00,
+#ff3c38,
+#fcbf49,
+#00a6ed,
+#6a4c93,
+#16db65;
+
+.banner {
+  animation : bgShift 3s steps(1, end) infinite;
+  padding   : 6rem 2rem;
+  width: 100%;
+  height: calc(100vh - 65px);
+  text-align: center;
+  transition: background-color 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  padding-bottom: 20%;
+  font-size     : 10rem;
+  font-weight   : bold;
+  letter-spacing: 0.3rem;
+  animation     : colorShift 3s steps(1, end) infinite;
+  transition    : color 0.5s;
+}
+
+.subtitle {
+  margin-top: 1rem;
+  font-size : 4.5rem;
+}
+
+/* Color animation for text */
+@keyframes colorShift {
+  0% {
+    color: #ff7a00;
+  }
+
+  20% {
+    color: #ff3c38;
+  }
+
+  40% {
+    color: #fcbf49;
+  }
+
+  60% {
+    color: #00a6ed;
+  }
+
+  80% {
+    color: #6a4c93;
+  }
+
+  100% {
+    color: #16db65;
+  }
+}
+
+/* Matching background animation */
+@keyframes bgShift {
+  0% {
+    background-color: #6a4c93;
+  }
+
+  20% {
+    background-color: #00a6ed;
+  }
+
+  40% {
+    background-color: #ff7a00;
+  }
+
+  60% {
+    background-color: #ff3c38;
+  }
+
+  80% {
+    background-color: #fcbf49;
+  }
+
+  100% {
+    background-color: #ff7a00;
+  }
+}
